@@ -13,6 +13,8 @@
 		013E1E7E1FF157450062BABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013E1E7D1FF157450062BABD /* Assets.xcassets */; };
 		013E1E811FF157450062BABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013E1E7F1FF157450062BABD /* LaunchScreen.storyboard */; };
 		013E1E841FF157460062BABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E1E831FF157460062BABD /* main.m */; };
+		013E1E8D1FF158180062BABD /* SZBulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E1E8C1FF158180062BABD /* SZBulletView.m */; };
+		013E1E901FF158A50062BABD /* SZDanmakuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E1E8F1FF158A50062BABD /* SZDanmakuManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		013E1E801FF157450062BABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		013E1E821FF157460062BABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013E1E831FF157460062BABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		013E1E8B1FF158180062BABD /* SZBulletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZBulletView.h; sourceTree = "<group>"; };
+		013E1E8C1FF158180062BABD /* SZBulletView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZBulletView.m; sourceTree = "<group>"; };
+		013E1E8E1FF158A50062BABD /* SZDanmakuManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZDanmakuManager.h; sourceTree = "<group>"; };
+		013E1E8F1FF158A50062BABD /* SZDanmakuManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZDanmakuManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		013E1E731FF157450062BABD /* SZDanmaku */ = {
 			isa = PBXGroup;
 			children = (
+				013E1E8A1FF1576D0062BABD /* SZDanmaku */,
 				013E1E741FF157450062BABD /* AppDelegate.h */,
 				013E1E751FF157450062BABD /* AppDelegate.m */,
 				013E1E771FF157450062BABD /* ViewController.h */,
@@ -67,6 +74,17 @@
 				013E1E7F1FF157450062BABD /* LaunchScreen.storyboard */,
 				013E1E821FF157460062BABD /* Info.plist */,
 				013E1E831FF157460062BABD /* main.m */,
+			);
+			path = SZDanmaku;
+			sourceTree = "<group>";
+		};
+		013E1E8A1FF1576D0062BABD /* SZDanmaku */ = {
+			isa = PBXGroup;
+			children = (
+				013E1E8B1FF158180062BABD /* SZBulletView.h */,
+				013E1E8C1FF158180062BABD /* SZBulletView.m */,
+				013E1E8E1FF158A50062BABD /* SZDanmakuManager.h */,
+				013E1E8F1FF158A50062BABD /* SZDanmakuManager.m */,
 			);
 			path = SZDanmaku;
 			sourceTree = "<group>";
@@ -97,6 +115,7 @@
 		013E1E691FF157450062BABD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SZ;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Zahi;
 				TargetAttributes = {
@@ -143,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				013E1E791FF157450062BABD /* ViewController.m in Sources */,
+				013E1E901FF158A50062BABD /* SZDanmakuManager.m in Sources */,
+				013E1E8D1FF158180062BABD /* SZBulletView.m in Sources */,
 				013E1E841FF157460062BABD /* main.m in Sources */,
 				013E1E761FF157450062BABD /* AppDelegate.m in Sources */,
 			);
@@ -279,8 +300,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MP46YHL9C7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SZDanmaku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zahi.SZDanmaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,8 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MP46YHL9C7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SZDanmaku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zahi.SZDanmaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
